@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <h1><span class="rice-icon">🌾</span> GrainPalette</h1>
+            <p>Identify Rice Types with AI</p>
+        </header>
+        <main>
+            <h2>Prediction Result</h2>
+            <p>Predicted Rice Type: {{ prediction }}</p>
+            <img src="{{ image_path }}" alt="Uploaded Image">
+            <a href="/">Predict Another</a>
+        </main>
+    </div>
+</body>
+</html>

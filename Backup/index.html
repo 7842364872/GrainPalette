@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Type Classifier</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <h1><span class="rice-icon">🌾</span> GrainPalette</h1>
+            <p>Identify Rice Types with AI</p>
+        </header>
+        <main>
+            <form action="/predict" method="post" enctype="multipart/form-data" id="upload-form">
+                <h2>Upload a Rice Grain Image</h2>
+                <input type="file" name="file" id="file-input" accept="image/*" required>
+                <input type="submit" value="Predict" data-tooltip="Upload a clear rice grain image for best results">
+                <div class="spinner" id="spinner" style="display: none;"></div>
+            </form>
+        </main>
+        <footer>
+            <p>GrainPalette © 2025 by Pooja</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('upload-form').addEventListener('submit', function(event) {
+            const fileInput = document.getElementById('file-input');
+            if (fileInput.files.length === 0) {
+                event.preventDefault(); // Stop form submission
+                return; // Browser shows "Please choose a file" due to required attribute
+            }
+            document.getElementById('spinner').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
