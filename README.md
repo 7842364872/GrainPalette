@@ -53,6 +53,16 @@ Tested and ready for deployment or demonstration.
 
 ---
 
+## 🔗 Additional Resources
+
+- 📄 [Project Report (PDF)](https://github.com/7842364872/GrainPalette/blob/main/docs/GrainPalette_Final_Report.pdf)
+  
+- 🎥 [Demo Video (Google Drive)](https://drive.google.com/file/d/1qRNce6C82ytBoKAeroGNA8gJKZ08mYiS/view?usp=sharing)
+
+
+- 📦 [Dataset (Google Drive)](https://drive.google.com/file/d/1gpAbi8vhLsZzM0CrnPHV-ejQILcBeTG/view?usp=sharing)
+
+
 ## 📌 Note
 
 This project was created as part of a practical AI/ML internship project submission.  
